@@ -1,0 +1,2 @@
+# Install qmmm from this folder so it picks up changes you make here.
+-e .

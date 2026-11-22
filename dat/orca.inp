@@ -1,0 +1,11 @@
+! UKS TPSS def2-SVP RI def2/J D3ZERO VeryTightSCF DefGrid3 NoAutoStart{guess_keyword}
+# These settings tell ORCA how to calculate the energy and gradient of the QM region.
+%pal nprocs {ranks} end
+%maxcore {maxcore}
+{read_seed}
+%scf
+ MaxIter 300
+ SThresh 1e-8
+ AutoStart false
+{spin_guess}
+end

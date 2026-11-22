@@ -1,0 +1,19 @@
+Keep the QM atoms fixed while sander relaxes the selected MM atoms.
+&cntrl
+ imin=1, maxcyc={cycles}, ncyc={descent_cycles}, ntmin=1,
+ ntx=1, irest=0, ntb=0, igb=0, ntp=0,
+ cut=999.0, ntc=1, ntf=1, ntr=0,
+ drms={drms:.8g}, dx0=0.005, ntpr=1, ntxo=1,
+ ifqnt=1,
+ {belly},
+/
+&qmmm
+ qmmask='{qm_mask}',
+ qmcharge={charge}, spin={multiplicity}, qm_theory='EXTERN',
+ qmcut=999.0, qm_ewald=0, qmshake=0,
+ lnk_dis=1.09, lnk_atomic_no=1, lnk_method=1, adjust_q=2,
+ writepdb=1,
+/
+&orc
+ use_template=1,
+/

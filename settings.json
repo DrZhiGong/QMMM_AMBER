@@ -1,0 +1,6 @@
+{
+  "orca_ranks": 2,
+  "maxcore_mb_per_rank": 1000,
+  "max_cycles": 200,
+  "drms_kcal_mol_angstrom": 0.01
+}

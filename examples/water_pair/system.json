@@ -1,0 +1,8 @@
+{
+  "topology": "system.prmtop",
+  "coordinates": "initial.rst7",
+  "qm_atoms": "1-3",
+  "movable_mm_atoms": "4-6",
+  "qm_charge": 0,
+  "multiplicity": 1
+}

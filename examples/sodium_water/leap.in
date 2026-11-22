@@ -1,0 +1,12 @@
+# Build Na+ and two TIP3P waters and write their topology and starting coordinates.
+source leaprc.water.tip3p
+set default PBRadii mbondi
+loadAmberParams frcmod.ionsjc_tip3p
+ion = copy Na+
+w1 = copy WAT
+w2 = copy WAT
+translate w1 { 2.5 0.0 0.0 }
+translate w2 { 0.0 2.8 0.0 }
+system = combine { ion w1 w2 }
+saveamberparm system system.prmtop initial.rst7
+quit
